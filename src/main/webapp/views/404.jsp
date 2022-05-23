@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>404 HTML Template by Colorlib</title>
     <link href="https://fonts.googleapis.com/css?family=Cabin:400,700" rel="stylesheet">
-    <%--    <link type="text/css" rel="stylesheet" href="../Views/css/style.css" />--%>
-    <style> <%@include file="css/style.css"%></style>
+<%--    <link type="text/css" rel="stylesheet" href="" />--%>
+    <style type="text/css">
+        <%@include file="css/style.css" %>
+    </style>
 
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>

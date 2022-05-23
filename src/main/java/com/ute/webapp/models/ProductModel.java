@@ -15,6 +15,15 @@ public class ProductModel {
         }
     }
 
+    public static List<Product> findByType(int type) {
+        final String query = "select * from products where Type = :Type";
+        try (Connection con = DbUtils.getConnection()) {
+            return con.createQuery(query)
+                    .addParameter("Type", type)
+                    .executeAndFetch(Product.class);
+        }
+    }
+
     public static Product findById(int id) {
         final String query = "select * from products where ProID = :ProID";
         try (Connection con = DbUtils.getConnection()) {
